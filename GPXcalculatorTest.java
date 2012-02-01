@@ -16,7 +16,7 @@ public class GPXcalculatorTest {
 	public void testTwoGPXtrkptsOneGPXtrkseg() {
 		Date date = new Date();
 		GPXtrkpt trkpt1 = new GPXtrkpt(80.0, 100.0, date);
-		GPXtrkpt trkpt2 = new GPXtrkpt(81.0, 101.0, date);
+		GPXtrkpt trkpt2 = new GPXtrkpt(80.0, 101.0, date);
 		ArrayList<GPXtrkpt> trkpts = new ArrayList<GPXtrkpt>();
 		trkpts.add(trkpt1);
 		trkpts.add(trkpt2);
