@@ -215,7 +215,7 @@ public class GPXcalculatorTest {
 	 *  the distance traveled for that GPXtrkseg should be considered 0.
 	 */
 	@Test
-	public void testOneGPXtrkptLatitudeLessThanNegativeNinety() {
+	public void testGPXtrkptLatitudeLessThanNegativeNinety() {
 		Date date = new Date();
 		GPXtrkpt trkpt1 = new GPXtrkpt(-100.0, 1.0, date); // bad point
 		GPXtrkpt trkpt2 = new GPXtrkpt(80, 0.0, date);
@@ -235,7 +235,7 @@ public class GPXcalculatorTest {
 	 * Boundary case for above case. This should compute normally.
 	 */
 	@Test
-	public void testOneGPXtrkptLatitudeEqualsNegativeNinety() {
+	public void testGPXtrkptLatitudeEqualsNegativeNinety() {
 		Date date = new Date();
 		GPXtrkpt trkpt1 = new GPXtrkpt(-90.0, 1.0, date); // OK point
 		GPXtrkpt trkpt2 = new GPXtrkpt(-89.0, 1.0, date);
@@ -256,7 +256,7 @@ public class GPXcalculatorTest {
 	 * the distance traveled for that GPXtrkseg should be considered 0.
 	 */
 	@Test
-	public void testOneGPXtrkptLongitudeGreaterThanOneEighty() {
+	public void testGPXtrkptLongitudeGreaterThanOneEighty() {
 		Date date = new Date();
 		GPXtrkpt trkpt1 = new GPXtrkpt(1.0, 200.0, date); // bad point
 		GPXtrkpt trkpt2 = new GPXtrkpt(1.0, 100.0, date);
@@ -276,7 +276,7 @@ public class GPXcalculatorTest {
 	 * Boundary case for above case. This should compute normally.
 	 */
 	@Test
-	public void testOneGPXtrkptLongitudeEqualsOneEighty() {
+	public void testGPXtrkptLongitudeEqualsOneEighty() {
 		Date date = new Date();
 		GPXtrkpt trkpt1 = new GPXtrkpt(1.0, 180.0, date); // OK point
 		GPXtrkpt trkpt2 = new GPXtrkpt(1.0, 179.0, date);
@@ -297,7 +297,7 @@ public class GPXcalculatorTest {
 	 * the distance traveled for that GPXtrkseg should be considered 0.
 	 */
 	@Test
-	public void testOneGPXtrkptLongitudeLessThanNegativeOneEighty() {
+	public void testGPXtrkptLongitudeLessThanNegativeOneEighty() {
 		Date date = new Date();
 		GPXtrkpt trkpt1 = new GPXtrkpt(1.0, -200.0, date); // bad point
 		GPXtrkpt trkpt2 = new GPXtrkpt(1.0, 100.0, date);
@@ -316,7 +316,7 @@ public class GPXcalculatorTest {
 	/**
 	 * Boundary case for above case. This should compute normally.
 	 */
-	public void testOneGPXtrkptLongitudeEqualsNegativeOneEighty() {
+	public void testGPXtrkptLongitudeEqualsNegativeOneEighty() {
 		Date date = new Date();
 		GPXtrkpt trkpt1 = new GPXtrkpt(1.0, -180.0, date); // OK point
 		GPXtrkpt trkpt2 = new GPXtrkpt(1.0, -179.0, date);
