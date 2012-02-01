@@ -299,7 +299,7 @@ public class GPXcalculatorTest {
 	@Test
 	public void testOneGPXtrkptLongitudeLessThanNegativeOneEighty() {
 		Date date = new Date();
-		GPXtrkpt trkpt1 = new GPXtrkpt(1.0, -200.0, date);
+		GPXtrkpt trkpt1 = new GPXtrkpt(1.0, -200.0, date); // bad point
 		GPXtrkpt trkpt2 = new GPXtrkpt(1.0, 100.0, date);
 		GPXtrkpt trkpt3 = new GPXtrkpt(0.0, 100.0, date);
 		ArrayList<GPXtrkpt> trkpts = new ArrayList<GPXtrkpt>();
@@ -318,7 +318,7 @@ public class GPXcalculatorTest {
 	 */
 	public void testOneGPXtrkptLongitudeEqualsNegativeOneEighty() {
 		Date date = new Date();
-		GPXtrkpt trkpt1 = new GPXtrkpt(1.0, -180.0, date);
+		GPXtrkpt trkpt1 = new GPXtrkpt(1.0, -180.0, date); // OK point
 		GPXtrkpt trkpt2 = new GPXtrkpt(1.0, -179.0, date);
 		GPXtrkpt trkpt3 = new GPXtrkpt(0.0, -179.0, date);
 		ArrayList<GPXtrkpt> trkpts = new ArrayList<GPXtrkpt>();
